@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Function</th>
+        <th scope="col">X</th>
+        <th scope="col">Y</th>
+        <th scope="col">Result</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">Add</th>
+        <td>{{task_result.x}}</td>
+        <td>{{task_result.y}}</td>
+        <td>{{task_result.result}}</td>
+    </tr>
+    </tbody>
+</table>
+{% endblock %}
